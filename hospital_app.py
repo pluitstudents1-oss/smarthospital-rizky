@@ -88,17 +88,17 @@ DEPT_INFO = {
 # ── Hero Header ───────────────────────────────────────────────────────────────
 st.markdown("""
 <!-- COLOR1 -->
-<div style="background:linear-gradient(135deg,#f60606 0%,#4fff0a 60%,#c10cdd 100%);
+<div style="background:linear-gradient(135deg,hwb(212 7% 8% / 0.949) 77% 0%) 77% 0%) 0%,#4fff0a 60%,#c10cdd 100%);
             padding:3rem 2rem 2.5rem;margin:-1rem -1rem 2rem;text-align:center;">
-    <div style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.7);
+    <div style="font-size:14px;font-weight:500;color:rgba(9, 90, 188, 0.887);
                 text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;">
         🏥 Future Classroom · Machine Learning
     </div>
-    <div style="font-size:36px;font-weight:700;color:#ffffff;margin-bottom:12px;
+    <div style="font-size:36px;font-weight:700;color:#08b1ffac;margin-bottom:12px;
                 letter-spacing:-0.02em;">
         Smart Hospital Patient Navigator
     </div>
-    <div style="font-size:18px;color:rgba(255,255,255,0.85);font-weight:400;">
+    <div style="font-size:18px;color:rgba(214, 10, 224, 0.815);font-weight:400;">
         Smart Hospital Patient Navigator
     </div>
 </div>
@@ -110,13 +110,13 @@ with st.form("triage_form"):
     # Section 1 — Symptoms
     st.markdown("""
     <!-- COLOR2 -->
-    <div style="background:#f60909;border:1px solid #cbdc0d;border-radius:14px;
+    <div style="background:#09f684ba;border:1px solid #2258c3;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-            <span style="background:#25f20a;color:white;border-radius:8px;
+            <span style="background:#147bc0;color:rgb(13, 106, 182);border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">1</span>
             <span style="font-size:16px;font-weight:600;color:#105efa;">What are your main symptoms?</span>
-            <span style="font-size:13px;color:#6b7280;font-style:italic;">select all that apply</span>
+            <span style="font-size:13px;color:#0e5dad;font-style:italic;">select all that apply</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -144,10 +144,10 @@ with st.form("triage_form"):
     # Section 2 — Duration & Complaint
     st.markdown("""
     <!-- COLOR3 -->
-    <div style="background:#f60909;border:1px solid #cbdc0d;border-radius:14px;
+    <div style="background:#09daf6;border:1px solid #0d25dc;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-            <span style="background:#25f20a;color:white;border-radius:8px;
+            <span style="background:#0a25f2;color:rgb(255, 255, 255);border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">2</span>
             <span style="font-size:16px;font-weight:600;color:#105efa;">How long have you had these symptoms?</span>
         </div>
@@ -165,10 +165,10 @@ with st.form("triage_form"):
     # Section 3 — Severity
     st.markdown("""
     <!-- COLOR4 -->
-    <div style="background:#f60909;border:1px solid #cbdc0d;border-radius:14px;
+    <div style="background:#0987f6;border:1px solid #0d9edc;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-            <span style="background:#25f20a;color:white;border-radius:8px;
+            <span style="background:#0e0af2;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">3</span>
             <span style="font-size:16px;font-weight:600;color:#105efa;">How would you rate the severity?</span>
         </div>
@@ -186,10 +186,10 @@ with st.form("triage_form"):
     # Section 4 — Medical History
     st.markdown("""
     <!-- COLOR5 -->
-    <div style="background:#f60909;border:1px solid #cbdc0d;border-radius:14px;
+    <div style="background:#3509f6;border:1px solid #480ddc;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-            <span style="background:#25f20a;color:white;border-radius:8px;
+            <span style="background:#210af2;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">4</span>
             <span style="font-size:16px;font-weight:600;color:#105efa;">Do you have any of the following?</span>
         </div>
@@ -206,10 +206,10 @@ with st.form("triage_form"):
     # Section 5 — Patient Info
     st.markdown("""
     <!-- COLOR6 -->
-    <div style="background:#f60909;border:1px solid #cbdc0d;border-radius:14px;
+    <div style="background:#1109f6;border:1px solid #0d0ddc;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-            <span style="background:#25f20a;color:white;border-radius:8px;
+            <span style="background:#0a57f2;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">5</span>
             <span style="font-size:16px;font-weight:600;color:#105efa;">Patient Information</span>
         </div>
@@ -331,8 +331,8 @@ if submitted:
 
         st.markdown(bars_html + """
             <!-- COLOR7 -->
-            <div style="margin-top:20px;background:#e90ee9;border:1px solid #ff0505;
-                        border-radius:10px;padding:12px 14px;font-size:12px;color:#1af250;">
+            <div style="margin-top:20px;background:#280ee9;border:1px solid #5d05ff;
+                        border-radius:10px;padding:12px 14px;font-size:12px;color:#1a74f2;">
                 <strong>Model:</strong>Confidence by department
 <br>
                 <strong>Powered by:</strong> Future Classroom ML
