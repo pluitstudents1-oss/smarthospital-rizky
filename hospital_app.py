@@ -206,7 +206,7 @@ with st.form("triage_form"):
     ch1, ch2, ch3, _ = st.columns(4)
     with ch1: hypertension  = st.checkbox("high blood pressure ")
     with ch2: heart_disease = st.checkbox("❤️  heart_disease")
-    with ch3: asthma        = st.checkbox("💨 asthma)
+    with ch3: asthma        = st.checkbox("💨 asthma")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
