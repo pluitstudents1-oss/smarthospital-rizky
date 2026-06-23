@@ -228,8 +228,7 @@ with st.form("triage_form"):
     with col_age:
         age    = st.number_input("35", min_value=1, max_value=120, value=35)
     with col_gen:
-        gender = st.selectbox("Female
-", options=['Female', 'Male'])
+        gender = st.selectbox("Female", options=['Female', 'Male'])
 
     submitted = st.form_submit_button("get ai recommendation →")
 
