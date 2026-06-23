@@ -158,12 +158,9 @@ with st.form("triage_form"):
 
     col_cc, col_dur = st.columns(2)
     with col_cc:
-        chief_complaint = st.selectbox("Fever
-", options=list(cc_map.keys()))
+        chief_complaint = st.selectbox("Fever", options=list(cc_map.keys()))
     with col_dur:
-        duration = st.selectbox("Duration
-
-1-3 days", options=list(dur_map.keys()), index=1)
+        duration = st.selectbox("CODENO16", options=list(dur_map.keys()), index=1)
 
     st.markdown("<br>", unsafe_allow_html=True)
 
